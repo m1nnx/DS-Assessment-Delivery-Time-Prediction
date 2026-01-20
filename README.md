@@ -159,8 +159,8 @@ Model performance is evaluated using 5-fold cross-validation:
 After validation, the model is retrained using the full cleaned dataset to maximize learning:
 - This final model is intended for deployment or further analysis.
 - The trained pipeline (including preprocessing and regression) is saved as a single artifact for reproducibility.
-
-##Future Improvements
+---
+## Future Improvements
 
 1. Aplication of PCA to reduce data dimension.
 2. Utilize Date & Time to introduce a time series forecasting model for better ahead planning. 
@@ -201,7 +201,7 @@ Go to: **http://localhost:5000**
 ---
 
 
-### Answers to Questions
+## Answers to Questions
 
 1. You might have noticed rows with negative package weights. If you found that 25% of the dataset had negative weights, would you drop them? If not, what would you do instead?
 
@@ -211,6 +211,7 @@ Go to: **http://localhost:5000**
 
 - Yes, I would purchase it. traffic_level is statistically proven to be significant when fitting into OLS together with other factors. Even after holding other Betas constant, it is proven that one level increase in traffic_level (ordinal encoded) incurs 3.94 minutes to delivery time. This indicates that traffic_level has a material and interpretable effect on the target variable.
 
+Refer to image below:
 ![Alt text]([[src/Traffic Level Corr w Other X Controled.png]()](https://github.com/m1nnx/DS-Assignment-Delivery-Time-Prediction/blob/9db039c9450045c8b1447df6f209b031f2c58cee/src/Traffic%20Level%20Corr%20-%20Other%20X%20Controled.png))
 
 
