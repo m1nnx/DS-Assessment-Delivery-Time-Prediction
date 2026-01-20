@@ -118,13 +118,13 @@ This indicates that the selected features explain a large portion of delivery ti
 
 To better understand one-to-one relationships while holding other factors constant, partial regression (Frisch-Waugh-Lovell theorem) was applied.
 
-This allowed isolation of:
+This allowed isolation An X Target to Y Target while freezing other factors:
 - Distance → delivery time effect
 - Traffic level → delivery time effect
 
 Findings show that:
 - When other factors are controlled, each additional kilometer adds ~2 minutes to delivery time.
-- Holding other factors constant, each additional unit or a level increase in Traffic level adds roughly 7.3 minutes to delivery time, showing a clear and interpretable marginal effect without ignoring operational complexity.
+- Holding other factors constant, each additional unit or a level increase in Traffic level adds roughly 7.37 minutes to delivery time, showing a clear and interpretable marginal effect without ignoring operational complexity.
 - This confirms a clean, interpretable relationship beyond multivariate correlations.
 
 ---
@@ -204,11 +204,11 @@ Go to: **http://localhost:5000**
 
 ## Answers to Questions
 
-1. You might have noticed rows with negative package weights. If you found that 25% of the dataset had negative weights, would you drop them? If not, what would you do instead?
+# 1. You might have noticed rows with negative package weights. If you found that 25% of the dataset had negative weights, would you drop them? If not, what would you do instead?
 
 - Yes, I would remove them as these could be considered data anomalies. I believe in the GIGO concept: garbage in, garbage out. There is no existence of negative values in weight. Including them in model training will bias the learned relationships, and potentially distort the fitted curve (especially in polynomial regression). The best use case is to set a range of weight >0 during deployment as a preventive measure against invalid prediction inputs.
 
-2. Imagine the traffic_level data comes from a paid API that costs us money every time we call it. How would you determine if this feature is 'worth' the cost?
+# 2. Imagine the traffic_level data comes from a paid API that costs us money every time we call it. How would you determine if this feature is 'worth' the cost?
 
 - Yes, I would purchase it. traffic_level is statistically proven to be significant when fitting into OLS together with other factors. Even after holding other Betas constant, it is proven that one level increase in traffic_level (ordinal encoded) incurs 7.37 minutes to delivery time. This indicates that traffic_level has a material and interpretable effect on the target variable.
 
