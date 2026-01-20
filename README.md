@@ -210,7 +210,7 @@ Go to: **http://localhost:5000**
 
 2. Imagine the traffic_level data comes from a paid API that costs us money every time we call it. How would you determine if this feature is 'worth' the cost?
 
-- Yes, I would purchase it. traffic_level is statistically proven to be significant when fitting into OLS together with other factors. Even after holding other Betas constant, it is proven that one level increase in traffic_level (ordinal encoded) incurs 3.94 minutes to delivery time. This indicates that traffic_level has a material and interpretable effect on the target variable.
+- Yes, I would purchase it. traffic_level is statistically proven to be significant when fitting into OLS together with other factors. Even after holding other Betas constant, it is proven that one level increase in traffic_level (ordinal encoded) incurs 7.37 minutes to delivery time. This indicates that traffic_level has a material and interpretable effect on the target variable.
 
 ![Alt text](https://github.com/m1nnx/DS-Assignment-Delivery-Time-Prediction/blob/9db039c9450045c8b1447df6f209b031f2c58cee/src/Traffic%20Level%20Corr%20-%20Other%20X%20Controled.png)
 
