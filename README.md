@@ -1,5 +1,5 @@
 # Junior Data Scientist Take-Home Assignment
-# Delivery Time Prediction — Workflow
+# Delivery Time Prediction — ML Workflow
 
 Prior to the assesment requirement, I have developed an explainable machine learning and statistical modelling workflow to understand and predict delivery time. The focus is not only on prediction accuracy, but also on **interpretability, statistical validity, and practical insights**.
 
@@ -152,6 +152,8 @@ After validation, the final model is retrained on the full dataset and saved as 
 3. Addition of seasonal factors such as holidays, festive seasons and etc to improve model accuracy,
 4. Include more data & longer timeframe.
 
+
+
 ## Extra - Model Deployment (Prediction App)
 
 # Delivery Time Predictor
@@ -193,4 +195,4 @@ Go to: **http://localhost:5000**
 
 - Yes, I would purchase it. traffic_level is statistically proven to be significant when fitting into OLS together with other factors. Even after holding other Betas constant, it is proven that one level increase in traffic_level (ordinal encoded) incurs 3.94 minutes to delivery time. This indicates that traffic_level has a material and interpretable effect on the target variable.
 
-![Alt text](\junior-ds-takehome\src\Traffic Level Corr w Other X Controled.png)
+![Alt text](src/Traffic Level Corr w Other X Controled.png)
