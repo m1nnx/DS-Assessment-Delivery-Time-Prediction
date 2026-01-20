@@ -138,15 +138,29 @@ The dataset is first cleaned and enriched with key time-based features. Input va
 - Ordinal features (traffic level) are encoded with explicit ordering
 - Categorical features are one-hot encoded
 
-All preprocessing steps are combined using a single pipeline and applied consistently during training and validation.
+### Model Structure
 
-The model uses Best R2 achieved polynomial regression (degree 2) to capture interaction while maintaining interpretability.
+The final model consists of:
+- A preprocessing stage
+- Polynomial feature expansion (degree = 2)
+- Linear regression
 
-Performance is evaluated using 5-fold cross-validation with averaging the R2 and MAE to ensure stability across folds.
+Polynomial features allow the model to capture interaction and mild non-linear effects while remaining explainable and analytically tractable.
 
-After validation, the final model is retrained on the full dataset and saved as a single deployable artifact.
+### Cross-Validation
 
-### Future Improvements
+Model performance is evaluated using 5-fold cross-validation:
+- Each fold trains the model on a subset of data and evaluates it on unseen samples.
+- Performance is assessed using R² and Mean Absolute Error (MAE).
+- Consistent results across folds indicate model stability and robustness.
+
+### Final Training & Model Persistence
+
+After validation, the model is retrained using the full cleaned dataset to maximize learning:
+- This final model is intended for deployment or further analysis.
+- The trained pipeline (including preprocessing and regression) is saved as a single artifact for reproducibility.
+
+##Future Improvements
 
 1. Aplication of PCA to reduce data dimension.
 2. Utilize Date & Time to introduce a time series forecasting model for better ahead planning. 
