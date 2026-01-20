@@ -93,7 +93,7 @@ Non-significant variables (package weight, driver rating, some time features) we
 
 ---
 
-## 6. Final Model Performance
+## 6. Statistical on Final Selected Features
 
 Using a compact and interpretable feature set:
 - **R2** ≈ 0.88  
