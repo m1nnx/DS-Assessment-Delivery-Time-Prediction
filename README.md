@@ -1,4 +1,4 @@
-# Junior Data Scientist Take-Home Assignment
+# Junior Data Scientist Take - Home Assignment
 # Delivery Time Prediction — ML Workflow
 
 Prior to the assesment requirement, I have developed an explainable machine learning and statistical modelling workflow to understand and predict delivery time. The focus is not only on prediction accuracy, but also on **interpretability, statistical validity, and practical insights**.
