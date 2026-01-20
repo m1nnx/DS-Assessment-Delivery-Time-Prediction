@@ -195,6 +195,6 @@ Go to: **http://localhost:5000**
 
 - Yes, I would purchase it. traffic_level is statistically proven to be significant when fitting into OLS together with other factors. Even after holding other Betas constant, it is proven that one level increase in traffic_level (ordinal encoded) incurs 3.94 minutes to delivery time. This indicates that traffic_level has a material and interpretable effect on the target variable.
 
-![Alt text]([https://github.com/m1nnx/DS-Assignment-Delivery-Time-Prediction/tree/main/src](https://github.com/m1nnx/DS-Assignment-Delivery-Time-Prediction/blob/main/src/Traffic%20Level%20Corr%20w%20Other%20X%20Controled.png))
+![Alt text]([src/Traffic Level Corr w Other X Controled.png](https://github.com/m1nnx/DS-Assignment-Delivery-Time-Prediction/blob/bbe10aa0b20f4594fec927052dbf76137e5d0d37/src/Traffic%20Level%20Corr%20w%20Other%20X%20Controled.png))
 
 
