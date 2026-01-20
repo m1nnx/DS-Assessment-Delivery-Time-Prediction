@@ -2,7 +2,7 @@ import joblib
 import pandas as pd
 from flask import Flask, request, render_template_string
 
-model = joblib.load(r"C:\Users\Amin Zaini\Downloads\junior-ds-takehome\src\delivery_data.csv\delivery_time_poly_model_with_pipeline.pkl")
+model = joblib.load(r"C:\Users\Amin Zaini\Downloads\junior-ds-takehome\DS-Assignment-Delivery-Time-Prediction\src\delivery_time_poly_model_with_pipeline.pkl")
 
 app = Flask(__name__)
 
