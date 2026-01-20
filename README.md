@@ -1,6 +1,8 @@
 # Junior Data Scientist - TakeHome Assignment
 # Delivery Time Prediction — ML Workflow
 
+https://github.com/m1nnx/DS-Assessment-Delivery-Time-Prediction/blob/a317352d6b1745304994da3ee617f4e4be11a1a7/notebooks/starter_notebook.ipynb
+
 Prior to the assesment requirement, I have developed an explainable machine learning and statistical modelling workflow to understand and predict delivery time. The focus is not only on prediction accuracy, but also on **interpretability, statistical validity, and practical insights**.
 
 The workflow follows a structured progression: from data understanding and cleaning, to feature engineering, model development, and interpretation.
