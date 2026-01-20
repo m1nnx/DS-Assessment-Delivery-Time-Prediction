@@ -168,7 +168,7 @@ After validation, the model is retrained using the full cleaned dataset to maxim
 3. Addition of seasonal factors such as holidays, festive seasons and etc to improve model accuracy,
 4. Include more data & longer timeframe.
 
-
+---
 
 ## Extra - Model Deployment (Prediction App)
 
@@ -198,7 +198,7 @@ python app.py
 Go to: **http://localhost:5000**
 
 
-
+---
 
 
 ### Answers to Questions
