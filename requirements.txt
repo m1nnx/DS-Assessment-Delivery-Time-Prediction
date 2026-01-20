@@ -1,5 +1,7 @@
-pandas
 numpy
+pandas
 scikit-learn
+statsmodels
 matplotlib
-seaborn
+joblib
+flask
